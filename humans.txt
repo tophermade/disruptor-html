@@ -1,0 +1,20 @@
+/* INFO */
+About this file: http://humanstxt.org/
+
+
+/* TEAM */                            
+Your title: Topher Wilson                  
+Site: http://sprresponsive.com                          
+Twitter: @tophermade / @sprresonisve    
+Location: Idaho Falls, Idaho
+
+
+/* THANKS */							
+Name: Romulans
+
+
+/* SITE */                            
+Last update: 2013/02/06/
+Standards: HTML5, CSS
+Components: 
+Software: Designed in browser w/ Submlime2

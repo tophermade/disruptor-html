@@ -1,0 +1,307 @@
+/* you can't import inside a media query, so we place the query here instead */
+@media only screen and (min-width: 760px){
+
+/* custom variables */
+
+@link: #777;
+
+@heading: #333;
+
+@border: #ccc;
+
+
+
+/* layout */
+
+body {
+}
+
+.content{
+	max-width: 880px;
+}
+
+#nav{
+
+}
+
+	#social{
+		float: left;
+		padding-left: 18px;
+		display: block;
+
+		li{
+			float: left;
+			padding-right: 6px;
+		}
+
+		a{
+			float: left;
+			.size(24px, 24px);
+			.indent;
+			.round(2px);
+		}
+
+		.facebook{
+			background: url(img/s1.png) top left;
+		}
+
+		.twitter{
+			background: url(img/t2.png) top left;
+		}
+
+		.email{
+			background: url(img/s3.png) top left;
+		}
+	}
+
+	#menu{
+		float: right;
+	}
+
+
+#header{
+	padding-bottom:0;
+	h1, .tag{
+		float: right;
+		.true(68px);
+		padding-right: 18px;
+	}
+
+	#logo{
+		margin-left: 18px;
+		float: left;
+		margin-bottom: 20px;
+	}
+}
+
+	#welcome{
+		position: relative;
+		clear: both;
+
+		> h2{
+			max-width: 50%;
+		}
+
+		> p{
+			margin-right: 450px;
+		}
+
+		&:before{
+			position: absolute;
+			bottom:-49px;
+			right:0;
+			content:"";
+			float: right;
+			height: 338px;
+			width: 488px;
+			background: url(img/devices2.png) bottom right no-repeat;
+		}
+	}
+
+
+#steps{
+	position: relative;
+	border-bottom:0;
+
+	ul{
+		overflow: hidden;
+	}
+
+	li{
+		float: left;
+		width: 33%;
+		padding-left: 60px;
+
+		&:first-of-type{
+			background: url(img/amazon.png) top left no-repeat;
+		}
+
+		&:nth-of-type(2){
+			background: url(img/play.png) top left no-repeat;
+		}
+
+		&:last-of-type{
+			background: url(img/apple.png) top left no-repeat;
+		}
+	}
+}
+
+
+	.feature-box{
+		position: relative;
+		clear: both;
+		border-bottom: 1px solid #ddd;
+
+		p{
+			font-size: 14px;
+			padding-top: 4px;
+			max-width: 80%;
+		}
+	}
+	#content + .feature-box, #sidebar + .feature-box{
+		margin-bottom: 30px;
+	}
+	
+
+
+	
+
+	#sidebar ~ #content{
+		float: left;
+		width: 65%;
+	}
+
+		#signup{
+			float: right;
+			width: 70%;		
+
+			em{
+				display: block;
+				clear: both;
+				font-size: 11px;
+				padding-left: 30%;
+			}
+
+			p + form{
+				padding: 20px 0;
+			}	
+
+			p{
+				position: relative;
+				overflow: hidden;
+			}
+
+			input[type="text"], input[type="email"], textarea{
+				width: 50%;
+				float: right;
+				margin-right: 20%;
+			}
+
+			textarea{
+				width: 70%;
+				margin:0;
+			}
+
+			label{
+				float: left;
+				.true(34px);
+				padding:0;
+				width: 25%;
+			}
+		}
+
+
+	#sidebar{
+		display: block;
+		float: right;
+		width: 30%;
+		padding-right: 18px;
+		font-size: 13px;
+		line-height: 1.5em;
+
+		p, ul, ol, dl{
+			padding-bottom: 1em;
+		}
+
+		a{
+			color: #42CFED;
+		}
+
+		h2, h3{
+			color: #777;
+			font-size: 16px;
+			font-weight: bold;
+			padding-bottom: 8px;
+			margin-bottom: 8px;
+			border-bottom: 1px solid #ddd;
+		}
+	}
+
+		.widget{
+			position: relative;
+			padding-bottom: 30px;
+		}
+
+
+
+	
+	#video{
+		float: left;
+		width: 40%;
+	}
+
+	#works{
+		float: right;
+		width: 50%;
+	}
+
+
+
+	#footer{
+		position: relative;
+	}
+
+	.foot-box{
+		float: left;
+
+		> p{
+			max-width: 75%;
+		}		
+
+		&:first-of-type{
+			width: 25%;
+		}
+
+		&:nth-of-type(2){
+			width: 40%;
+		}
+
+		&:last-of-type{
+			width: 35%;
+		}
+	}
+
+	#newsletter{
+		span, span + span{
+			width: 50% !important;
+		}
+
+		span + span + span{
+			width: 100% !important;
+			display: block;
+			float: none;
+			padding-top: 15px;
+			clear: both;
+			text-align: right;
+			float: right;
+			margin-right: 4%;
+		}
+	}
+
+}/* end media query */
+
+
+@media only screen and (min-width: 701px) and (max-width: 840px) {
+
+	#page #content .entry .plan{
+		margin: auto;
+		float: left;
+		width: 340px;
+		clear: both;
+		margin-bottom: 30px;
+
+		&:nth-of-type(even){
+			float: right;
+			clear: none;
+			width: 340px;
+		}
+
+		.plan-head{			
+			.round(8px 8px 0 0);
+		}
+
+		.plan-for{
+			.round(0 0 8px 8px);
+		}
+	}
+}/* end media query */
