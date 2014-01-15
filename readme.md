@@ -1,4 +1,4 @@
-# sprSimple Invoice
+# Disruptor Template
 Disruptor - an HTML & CSS app website template
 
 * Homepage: [https://sprresponsive.com/disruptor-app-template/](https://sprresponsive.com/disruptor-app-template/)
